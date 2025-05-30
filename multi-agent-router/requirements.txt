@@ -1,0 +1,4 @@
+openai
+redis
+tqdm
+python-dotenv

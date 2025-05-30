@@ -1,0 +1,9 @@
+From: client@xyz.com
+Subject: Request for Quotation
+
+Hello,
+
+Please send me a quote for 200 units of Widget A.
+
+Thanks,
+Client
