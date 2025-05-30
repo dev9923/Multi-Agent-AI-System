@@ -40,6 +40,7 @@ Located in the `/samples` folder:
 
 Located in `logs/output_log.txt`.
 
+---
 
 ### Install
 ```bash
