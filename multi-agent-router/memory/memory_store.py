@@ -1,5 +1,4 @@
 from datetime import datetime
-
 class MemoryStore:
     def __init__(self):
         self.store = []
