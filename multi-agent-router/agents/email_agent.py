@@ -1,5 +1,4 @@
 import re
-
 def process_email(content):
     sender_match = re.search(r"From:\s*(.*)", content)
     sender = sender_match.group(1).strip() if sender_match else 'Unknown'
