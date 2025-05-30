@@ -3,7 +3,7 @@ Subject: Request for Quotation
 
 Hello,
 
-Please send me a quote for 200 units of Widget A.
+Please send me a quote.
 
 Thanks,
 Client
