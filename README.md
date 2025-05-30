@@ -32,13 +32,13 @@ This project implements a multi-agent document router system that:
 Located in the `/samples` folder:
 - `email_sample.txt`
 - `json_sample.json`
-- `pdf_sample.pdf` *(placeholder)*
+- `pdf_sample.pdf` 
 
 ---
 
 ## 📋 Sample Log
 
-Located in `/logs/output_log.txt`:
+Located in `logs/output_log.txt`.
 
 
 ### Install
@@ -51,4 +51,3 @@ pip install -r requirements.txt
 python main.py samples/email_sample.txt
 ```
 
-Logs are saved in `logs/output_log.txt`.
