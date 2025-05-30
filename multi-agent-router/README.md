@@ -1,4 +1,4 @@
-# Multi-Agent Document Router
+# Multi-Agent AI system
 
 This project implements a multi-agent AI system that:
 - Accepts inputs in Email, JSON, or PDF format
