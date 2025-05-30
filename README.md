@@ -46,6 +46,7 @@ Located in `logs/output_log.txt`.
 ```bash
 pip install -r requirements.txt
 ```
+---
 
 ### Run
 ```bash
