@@ -1,0 +1,24 @@
+multi-agent-document-router/
+├── agents/
+│   ├── classifier_agent.py
+│   ├── email_agent.py
+│   └── json_agent.py
+│
+├── memory/
+│   └── memory_store.py
+│
+├── samples/
+│   ├── email_sample.txt
+│   ├── json_sample.json
+│   └── pdf_sample.pdf   (placeholder)
+│
+├── logs/
+│   └── output_log.txt
+│
+├── screenshots/
+│   └── sample_run.png
+│
+├── main.py
+├── README.md
+├── requirements.txt
+└── .gitignore
