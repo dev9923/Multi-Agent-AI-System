@@ -3,7 +3,7 @@ services:
     name: multi-agent-router-backend
     env: node
     plan: free
-    buildCommand: cd backend && npm install
+    buildCommand: npm install --cache /tmp/empty-cache
     startCommand: node server.js
     envVars:
       - key: NODE_ENV
