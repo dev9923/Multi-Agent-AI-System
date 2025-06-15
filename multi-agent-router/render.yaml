@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: multi-agent-router-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: NUMVERIFY_API_KEY
+        sync: false  # Set manually in the Render Dashboard
+    autoDeploy: true
+    rootDir: backend
+
+  - type: static
+    name: multi-agent-router-frontend
+    staticPublishPath: frontend
+    buildCommand: ""
+    env: static
+    autoDeploy: true
