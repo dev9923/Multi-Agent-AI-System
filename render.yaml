@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: multi-agent-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install --force --cache=/tmp/npm-cache
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
