@@ -1,23 +1,27 @@
 services:
   - type: web
-    name: multi-agent-router-backend
+    name: multi-agent-backend
     env: node
     plan: free
-    buildCommand: npm install --cache /tmp/empty-cache
+    rootDir: backend
+    buildCommand: npm install --force --cache /tmp/cache
     startCommand: node server.js
+    autoDeploy: true
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 10000
       - key: NUMVERIFY_API_KEY
-        sync: false  # Set manually in the Render Dashboard
-    autoDeploy: true
-    rootDir: backend
+        sync: false  # Set this manually in Render dashboard
 
   - type: static
-    name: multi-agent-router-frontend
-    staticPublishPath: frontend
+    name: multi-agent-frontend
+    rootDir: frontend
     buildCommand: ""
-    env: static
-    autoDeploy: true
+    staticPublishPath: .
+    headers:
+      - source: "**"
+        headers:
+          - key: Cache-Control
+            value: no-cache
