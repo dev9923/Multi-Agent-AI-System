@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     rootDir: backend
-    buildCommand: npm install --force --cache /tmp/cache
+    buildCommand: npm install --cache /tmp/npm-cache --prefer-online --force
     startCommand: node server.js
     autoDeploy: true
     envVars:
